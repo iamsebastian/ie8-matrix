@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
+  background: #222;
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
@@ -299,7 +299,7 @@ $forThrough: 10;
     background-color: $desaturedDarkenedCol;
     $mustHaveBorder: 2px;
     $borderSize: (12px + $mustHaveBorder) - ($i * 1.2);
-    border: $borderSize solid #151515;
+    border: $borderSize solid #222;
   }
 }
 
