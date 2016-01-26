@@ -3,14 +3,19 @@ var dotMax = 0;
 var dotMin = 0;
 var dotAreas = [];
 
-var showInner = function() {
+var showActualValue = function() {
   var matrixDotElem = $(this);
   var val = matrixDotElem.attr('value') || '0';
   $('.display-count .count-value').text(val);
 };
 
+var hideActualValue = function() {
+  $('.display-count .count-value').text('-');
+};
+
 var addHoverListeners = function() {
-  $('.matrixdot').hover(showInner);
+  $('.matrixdot').hover(showActualValue);
+  $('.quadrant').mouseout(hideActualValue);
 };
 
 var addMatrixClasses = function() {
