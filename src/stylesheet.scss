@@ -297,7 +297,8 @@ $forThrough: 10;
 
   .op-#{$cls} {
     background-color: $desaturedDarkenedCol;
-    $borderSize: 12px - ($i * 1.2);
+    $mustHaveBorder: 2px;
+    $borderSize: (12px + $mustHaveBorder) - ($i * 1.2);
     border: $borderSize solid #151515;
   }
 }
