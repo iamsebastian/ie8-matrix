@@ -15,7 +15,7 @@ var hideActualValue = function() {
 
 var addHoverListeners = function() {
   $('.matrixdot').hover(showActualValue);
-  $('.quadrant').mouseout(hideActualValue);
+  $('.quadrant').mouseleave(hideActualValue);
 };
 
 var addMatrixClasses = function() {
