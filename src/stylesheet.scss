@@ -24,7 +24,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 612px;
+  max-width: 632px;
   margin: 0 auto;
 }
 
@@ -265,11 +265,11 @@ a {
 $dotC: #B5E853;
 
 .matrixdot {
-  background-color: $dotC;
-  border-radius: 50%;
+  /*background-color: $dotC;*/
+  /*border-radius: 50%;*/
   float: left;
-  height: 30px;
-  width: 30px;
+  height: 31px;
+  width: 31px;
 }
 
 .matrixdot:hover {
@@ -296,17 +296,18 @@ $forThrough: 10;
   $desaturedDarkenedCol: desaturate($darkenedCol, $relDesaturation);
 
   .op-#{$cls} {
-    background-color: $desaturedDarkenedCol;
-    $mustHaveBorder: 2px;
-    $borderSize: (12px + $mustHaveBorder) - ($i * 1.2);
-    border: $borderSize solid #222;
+    /*background-color: $desaturedDarkenedCol;*/
+    background-image: url('../images/circle_#{$cls}.png');
+    /*$mustHaveBorder: 2px;*/
+    /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+    /*border: $borderSize solid #222;*/
   }
 }
 
 .quadrant {
   margin: 0;
-  width: 306px;
-  height: 306px;
+  width: 316px;
+  height: 316px;
   padding: 2px;
   border: 2px solid #444;
   border-left: none;

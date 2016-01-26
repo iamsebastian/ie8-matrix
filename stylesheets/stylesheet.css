@@ -20,7 +20,7 @@ body {
 /* General & 'Reset' Stuff */
 .container {
   width: 90%;
-  max-width: 612px;
+  max-width: 632px;
   margin: 0 auto; }
 
 section {
@@ -215,64 +215,97 @@ a {
  * Declare matrix options.
  */
 .matrixdot {
-  background-color: #B5E853;
-  border-radius: 50%;
+  /*background-color: $dotC;*/
+  /*border-radius: 50%;*/
   float: left;
-  height: 30px;
-  width: 30px; }
+  height: 31px;
+  width: 31px; }
 
 .matrixdot:hover {
   background-color: #dcf4ad;
   opacity: 1; }
 
 .op-0 {
-  background-color: #566b2e;
-  border: 14px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_0.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-10 {
-  background-color: #607a30;
-  border: 12.8px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_10.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-20 {
-  background-color: #6b8931;
-  border: 11.6px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_20.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-30 {
-  background-color: #759831;
-  border: 10.4px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_30.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-40 {
-  background-color: #80a831;
-  border: 9.2px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_40.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-50 {
-  background-color: #8ab931;
-  border: 8px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_50.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-60 {
-  background-color: #96ca30;
-  border: 6.8px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_60.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-70 {
-  background-color: #9ed535;
-  border: 5.6px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_70.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-80 {
-  background-color: #a6dc3f;
-  border: 4.4px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_80.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-90 {
-  background-color: #aee249;
-  border: 3.2px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_90.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .op-100 {
-  background-color: #b5e853;
-  border: 2px solid #222; }
+  /*background-color: $desaturedDarkenedCol;*/
+  background-image: url("../images/circle_100.png");
+  /*$mustHaveBorder: 2px;*/
+  /*$borderSize: (12px + $mustHaveBorder) - ($i * 1.2);*/
+  /*border: $borderSize solid #222;*/ }
 
 .quadrant {
   margin: 0;
-  width: 306px;
-  height: 306px;
+  width: 316px;
+  height: 316px;
   padding: 2px;
   border: 2px solid #444;
   border-left: none;
