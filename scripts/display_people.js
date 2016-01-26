@@ -43,9 +43,17 @@ var setDotsValues = function() {
   var area = 0;
   var i = 0;
   var dotsValues = [];
+  var dotsValuesAvg = 0;
+  var dotsValuesSum = 0;
+
   $('.matrixdot').each(function() {
-    dotsValues.push(parseInt($(this).attr('value'), 10));
+    var val = parseInt($(this).attr('value'), 10)
+    dotsValues.push(val);
+    dotsValuesSum += val;
   });
+
+  dotsValuesAvg = Math.floor(dotsValuesSum / dotsValues.length * 10) / 10;
+  $('.display-count .avg-value').text(dotsValuesAvg);
 
   dotMax = Math.max.apply(Math, dotsValues);
 
