@@ -1,3 +1,15 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +24,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 610px;
+  max-width: 612px;
   margin: 0 auto;
 }
 
@@ -253,10 +265,11 @@ a {
 $dotC: #B5E853;
 
 .matrixdot {
-  width: 30px;
-  height: 30px;
-  float: left;
   background-color: $dotC;
+  border-radius: 50%;
+  float: left;
+  height: 30px;
+  width: 30px;
 }
 
 .matrixdot:hover {
@@ -265,24 +278,34 @@ $dotC: #B5E853;
 }
 
 $forFrom: 0;
-$forThrough: 9;
+$forThrough: 10;
 
 @for $i from $forFrom through $forThrough {
   $cls: $i * 10;
-  $lightness: lightness($dotC);
-  $saturation: saturation($dotC);
+  $divider: $forThrough;
+  $shouldNotGoDarkerThan: 30;
+  $shouldNotBeMoreDesaturedThan: 40;
 
-  $darkenedCol: darken($dotC, $lightness - ($i * ($lightness/$forThrough)));
-  $desaturedDarkenedCol: desaturate($darkenedCol, $saturation - ($i * ($saturation/$forThrough)));
+  $lightness: lightness($dotC) - $shouldNotGoDarkerThan;
+  $saturation: saturation($dotC) - $shouldNotBeMoreDesaturedThan;
+
+  $relLightAbsorb: $lightness - ($i * ($lightness/$divider));
+  $darkenedCol: darken($dotC, $relLightAbsorb);
+
+  $relDesaturation: $saturation - ($i * ($saturation/$divider));
+  $desaturedDarkenedCol: desaturate($darkenedCol, $relDesaturation);
+
   .op-#{$cls} {
     background-color: $desaturedDarkenedCol;
+    $borderSize: 12px - ($i * 1.2);
+    border: $borderSize solid #151515;
   }
 }
 
 .quadrant {
   margin: 0;
-  width: 300px;
-  height: 300px;
+  width: 306px;
+  height: 306px;
   padding: 2px;
   border: 2px solid #444;
   border-left: none;

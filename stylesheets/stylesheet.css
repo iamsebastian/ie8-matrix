@@ -1,3 +1,13 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +20,7 @@ body {
 /* General & 'Reset' Stuff */
 .container {
   width: 90%;
-  max-width: 610px;
+  max-width: 612px;
   margin: 0 auto; }
 
 section {
@@ -205,49 +215,64 @@ a {
  * Declare matrix options.
  */
 .matrixdot {
-  width: 30px;
-  height: 30px;
+  background-color: #B5E853;
+  border-radius: 50%;
   float: left;
-  background-color: #B5E853; }
+  height: 30px;
+  width: 30px; }
 
 .matrixdot:hover {
   background-color: #dcf4ad;
   opacity: 1; }
 
 .op-0 {
-  background-color: black; }
+  background-color: #566b2e;
+  border: 12px solid #151515; }
 
 .op-10 {
-  background-color: #121310; }
+  background-color: #607a30;
+  border: 10.8px solid #151515; }
 
 .op-20 {
-  background-color: #25291d; }
+  background-color: #6b8931;
+  border: 9.6px solid #151515; }
 
 .op-30 {
-  background-color: #394227; }
+  background-color: #759831;
+  border: 8.4px solid #151515; }
 
 .op-40 {
-  background-color: #4d5e2e; }
+  background-color: #80a831;
+  border: 7.2px solid #151515; }
 
 .op-50 {
-  background-color: #637d32; }
+  background-color: #8ab931;
+  border: 6px solid #151515; }
 
 .op-60 {
-  background-color: #7a9e34; }
+  background-color: #96ca30;
+  border: 4.8px solid #151515; }
 
 .op-70 {
-  background-color: #91c332; }
+  background-color: #9ed535;
+  border: 3.6px solid #151515; }
 
 .op-80 {
-  background-color: #a5da3e; }
+  background-color: #a6dc3f;
+  border: 2.4px solid #151515; }
 
 .op-90 {
-  background-color: #b5e853; }
+  background-color: #aee249;
+  border: 1.2px solid #151515; }
+
+.op-100 {
+  background-color: #b5e853;
+  border: 0px solid #151515; }
 
 .quadrant {
   margin: 0;
-  width: 300px;
-  height: 300px;
+  width: 306px;
+  height: 306px;
   padding: 2px;
   border: 2px solid #444;
   border-left: none;

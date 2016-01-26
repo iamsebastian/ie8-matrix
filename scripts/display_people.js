@@ -1,4 +1,4 @@
-var areasToDefine = 10;
+var areasToDefine = 11;
 var dotMax = 0;
 var dotMin = 0;
 var dotAreas = [];
