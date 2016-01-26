@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width: 610px;
   margin: 0 auto;
 }
 
@@ -244,4 +244,75 @@ a {
 
 .cf {
   zoom:1;
+}
+
+.matrixdot {
+  width: 30px;
+  height: 30px;
+  float: left;
+  background-color: #B5E853;
+}
+
+.matrixdot:hover {
+  background-color: #D5FF73;
+  opacity: 1;
+}
+
+.op10 {
+  opacity: 0.1;
+}
+
+.op20 {
+  opacity: 0.2;
+}
+
+.op30 {
+  opacity: 0.3;
+}
+
+.op40 {
+  opacity: 0.4;
+}
+
+.op50 {
+  opacity: 0.5;
+}
+
+.op60 {
+  opacity: 0.6;
+}
+
+.op70 {
+  opacity: 0.7;
+}
+
+.op80 {
+  opacity: 0.8;
+}
+
+.op90 {
+  opacity: 0.9;
+}
+
+.op100 {
+  opacity: 1;
+}
+
+.quadrant {
+  margin: 0;
+  width: 300px;
+  height: 300px;
+  padding: 2px;
+  border: 2px solid #444;
+  border-left: none;
+  border-top: none;
+  float: left;
+}
+
+.quadrant.bottom {
+  border-bottom: none;
+}
+
+.quadrant.right {
+  border-right: none;
 }
