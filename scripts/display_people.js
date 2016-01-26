@@ -5,7 +5,7 @@ var dotAreas = [];
 
 var showInner = function() {
   var matrixDotElem = $(this);
-  var val = matrixDotElem.text() || '0';
+  var val = matrixDotElem.attr('value') || '0';
   $('.display-count .count-value').text(val);
 };
 
@@ -18,7 +18,7 @@ var addMatrixClasses = function() {
     var arrIsIterated = false;
     var className;
     var dotElem = $(this);
-    var dotElemValue = parseInt(dotElem.text(), 10);
+    var dotElemValue = parseInt(dotElem.attr('value'), 10);
     var elemIsBelow = false;
     var i = 0;
 
@@ -44,7 +44,7 @@ var setDotsValues = function() {
   var i = 0;
   var dotsValues = [];
   $('.matrixdot').each(function() {
-    dotsValues.push(parseInt($(this).text(), 10));
+    dotsValues.push(parseInt($(this).attr('value'), 10));
   });
 
   dotMax = Math.max.apply(Math, dotsValues);
