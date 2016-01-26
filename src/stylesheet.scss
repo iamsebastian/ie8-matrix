@@ -273,7 +273,8 @@ $dotC: #B5E853;
 }
 
 .matrixdot:hover {
-  background-color: lighten($dotC, 20%);
+  /*background-color: lighten($dotC, 20%);*/
+  background-color: #333;
   opacity: 1;
 }
 

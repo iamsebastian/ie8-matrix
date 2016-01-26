@@ -222,7 +222,8 @@ a {
   width: 31px; }
 
 .matrixdot:hover {
-  background-color: #dcf4ad;
+  /*background-color: lighten($dotC, 20%);*/
+  background-color: #333;
   opacity: 1; }
 
 .op-0 {
