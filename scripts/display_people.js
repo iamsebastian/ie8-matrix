@@ -42,8 +42,9 @@ var addMatrixClasses = function() {
 var setDotsValues = function() {
   var area = 0;
   var i = 0;
-  var dotsValues = $('.matrixdot').map(function() {
-    return parseInt($(this).text(), 10);
+  var dotsValues = [];
+  $('.matrixdot').each(function() {
+    dotsValues.push(parseInt($(this).text(), 10));
   });
 
   dotMax = Math.max.apply(Math, dotsValues);
