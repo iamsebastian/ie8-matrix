@@ -208,40 +208,41 @@ a {
   width: 30px;
   height: 30px;
   float: left;
-  background-color: #B5E853; }
+  background-color: #B5E853;
+  color: transparent; }
 
 .matrixdot:hover {
   background-color: #dcf4ad;
   opacity: 1; }
 
-.op0 {
+.op-0 {
   background-color: black; }
 
-.op10 {
+.op-10 {
   background-color: #121310; }
 
-.op20 {
+.op-20 {
   background-color: #25291d; }
 
-.op30 {
+.op-30 {
   background-color: #394227; }
 
-.op40 {
+.op-40 {
   background-color: #4d5e2e; }
 
-.op50 {
+.op-50 {
   background-color: #637d32; }
 
-.op60 {
+.op-60 {
   background-color: #7a9e34; }
 
-.op70 {
+.op-70 {
   background-color: #91c332; }
 
-.op80 {
+.op-80 {
   background-color: #a5da3e; }
 
-.op90 {
+.op-90 {
   background-color: #b5e853; }
 
 .quadrant {
